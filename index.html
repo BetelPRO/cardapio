@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procópios Açaí</title>
+
+    <script src="js/menu.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+    <img class="romano" src="imagens/romano.png" alt="construção romana">
+
+    <div class="contain">
+        <nav class="navBar">
+            <div id="navLeft">
+                <div class="lista">
+                    <div>
+                        <a href="">Início</a>
+                    </div>
+                    <div>
+                        <a href="paginas/pedido.html">Fazer Pedido</a>
+                    </div>
+                </div>
+                <div>
+                    <img class="exit" id="exit" src="imagens/esc.png" onclick="exit()" alt="exit menu">
+                </div>
+                <div id="menu" onclick="menu()">
+                    <div class='menu'>
+                        <div id="men1"></div>
+                        <div id="men2"></div>
+                        <div id="men3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <h3>Procópios Açaí</h3>
+                <img src="imagens/logo.png" alt="logo Procópio's Açaí">
+            </div>
+        </nav>
+
+        <main>
+            <div class="slider">
+                <div class="btn_menu_celular">
+                    <label class="btn" id="btn1" for="slide1"></label>
+                    <label class="btn" id="btn2" for="slide2"></label>
+                    <label class="btn" id="btn3" for="slide3"></label>
+                    <label class="btn" id="btn4" for="slide4"></label>
+                </div>
+                <div class="entradas" onclick="toggleMenu()">
+                    <input type="radio" name="btn_slide" id="slide1" class="ativo1">
+                    <input type="radio" name="btn_slide" id="slide2">
+                    <input type="radio" name="btn_slide" id="slide3">
+                    <input type="radio" name="btn_slide" id="slide4">
+                    <div class="btn_menu">
+                        <label class="btn" id="btn1" for="slide1"></label>
+                        <label class="btn" id="btn2" for="slide2"></label>
+                        <label class="btn" id="btn3" for="slide3"></label>
+                        <label class="btn" id="btn4" for="slide4"></label>
+                    </div>
+                    <div class="imagem">
+                        <img src="imagens/slide1.jpg" alt="slide1">
+                        <img src="imagens/slide2.jpg" alt="slide2">
+                        <img src="imagens/slide3.jpg" alt="slide3">
+                        <img src="imagens/slide4.jpg" alt="slide4">
+                    </div>
+                </div>
+            </div>
+            <div class="somos" id="somos">
+                <div class="sob">
+                    <h4>Sobre nós</h4>
+                    <h2>&#10157</h2>
+                </div>
+                <img id="familia" onclick="sobre()" src="imagens/logo.png" alt="familia">
+                <div id="nós">
+                    <p>"A Procópio's Açaí nasceu da vontade de empreender em unidade e em família."</p>
+                </div>
+            </div>
+            <footer>
+                <p id="copy">© Copyright 2023 Procópio's Açaí - All Rights Reserved</p>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>

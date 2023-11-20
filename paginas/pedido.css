@@ -1,0 +1,139 @@
+body {
+    height: 98vh;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#copy {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {margin: 0;
+}
+
+.cardapio {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.cardapio h3 {
+    margin: 10px 0px 0px 20px;
+    color: white;
+    font-family: sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+
+.cardapio input {
+    display: none;
+}
+
+.tamanho {
+    display: none;
+}
+
+.acompanhamentos, .coberturas, .adicionais {
+    display: flex;
+    overflow-x: scroll;
+    border-radius: 5px;
+    gap: 1rem;
+    margin: 5px 10px;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.125);
+
+}
+
+.coberturas {
+    justify-content: center;
+}
+
+.acompanhamentos label, .coberturas label, .adicionais label {
+    margin: auto;
+    width: 75px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    margin-left: 10px;
+    background-image: url("../imagens/esc.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.acompanhamentos h4, .coberturas h4, .adicionais h4 {
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    height: 30px;
+    width: 75px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    margin-top: 65px;
+    font-family: 'sans-serif', 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+
+.cardapio img {
+    width: 75px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+button {
+    display: none;
+}
+
+.concluir {   
+    padding: 5px;
+    background-color: #509959;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.concluir:hover {
+    background-color: #7a918D;
+}
+
+.ativo {
+    border: 1px solid black;
+}
+@media (max-width:500px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    .cardapio {
+        background-color: rgba(128, 7, 128, 0.377);
+        width: 340px;
+        border-radius: 20px;
+        overflow: hidden;
+    }    
+}

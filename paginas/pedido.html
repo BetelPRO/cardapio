@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procópios Açaí - Faça seu Pedido</title>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/cardapio.js"></script>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="pedido.css">
+</head>
+
+<body>
+    <img class="romano" src="../imagens/romano.png" alt="construção romana">
+
+    <div class="contain">
+        <nav class="navBar">
+            <div id="navLeft">
+                <div class="lista">
+                    <div>
+                        <a href="../index.html">Início</a>
+                    </div>
+                    <div>
+                        <a href="">Fazer Pedido</a>
+                    </div>
+                </div>
+                <div>
+                    <img class="exit" id="exit" src="../imagens/esc.png" onclick="exit()" alt="exit menu">
+                </div>
+                <div id="menu" onclick="menu()">
+                    <div class='menu'>
+                        <div id="men1"></div>
+                        <div id="men2"></div>
+                        <div id="men3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <h3>Procópios Açaí</h3>
+                <img src="../imagens/logo.png" alt="logo Procópio's Açaí">
+            </div>
+        </nav>
+
+        <main>
+            <form class="cardapio">
+                <div class="tamanho">
+                    <div id="4ml"></div>
+                    <div id="3ml"></div>
+                </div>
+
+                <h3>Acompanhamentos</h3>
+                <div class="acompanhamentos">
+                    <label for="leitecheckbox" id="leite" onclick="leite()">
+                        <h4>Leite em Pó</h4>
+                    </label>
+                    <label for="paçocacheckbox" id="paçoca" onclick="paçoca()">
+                        <h4>Paçoca</h4>
+                    </label>
+                    <label for="granolacheckbox" id="granola" onclick="granola()">
+                        <h4>Granola</h4>
+                    </label>
+                    <label for="jujubacheckbox" id="jujuba" onclick="jujuba()">
+                        <h4>Jujuba</h4>
+                    </label>
+                    <label for="confetecheckbox" id="confete" onclick="confete()">
+                        <h4>Confete</h4>
+                    </label>
+                    <label for="chocoballcheckbox" id="chocoball" onclick="chocoball()">
+                        <h4>Choco Ball</h4>
+                    </label>
+                    <label for="bananacheckbox" id="banana" onclick="banana()">
+                        <h4>Banana</h4>
+                    </label>
+
+                    <input type="checkbox" id="leitecheckbox" name="leitecheckbox">
+                    <input type="checkbox" id="paçocacheckbox" name="paçocacheckbox">
+                    <input type="checkbox" id="granolacheckbox" name="granolacheckbox">
+                    <input type="checkbox" id="jujubacheckbox" name="jujubacheckbox">
+                    <input type="checkbox" id="confetecheckbox" name="confetecheckbox">
+                    <input type="checkbox" id="chocoballcheckbox" name="chocoballcheckbox">
+                    <input type="checkbox" id="bananacheckbox" name="bananacheckbox">
+                </div>
+
+                <h3>Coberturas</h3>
+                <div class="coberturas">
+                    <label for="condensadocheckbox" id="condensado" onclick="condensado()">
+                        <h4>Leite Condensado</h4>
+                    </label>
+                    <label for="cmorangocheckbox" id="cob_morango" onclick="cmorango()">
+                        <h4>Morango</h4>
+                    </label>
+                    <label for="chocolatecheckbox" id="chocolate" onclick="chocolate()">
+                        <h4>Chocolate</h4>
+                    </label>
+
+                    <input type="checkbox" id="condensadocheckbox" name="condensadocheckbox">
+                    <input type="checkbox" id="cmorangocheckbox" name="cmorangocheckbox">
+                    <input type="checkbox" id="chocolatecheckbox" name="chocolatecheckbox">
+                </div>
+
+                <h3>Adicionais</h3>
+                <div class="adicionais">
+                    <label for="acidacheckbox" id="acida" onclick="acida()">
+                        <h4>Goma Ácida</h4>
+                    </label>
+                    <label for="gomacheckbox" id="goma" onclick="goma()">
+                        <h4>Goma de Amora</h4>
+                    </label>
+                    <label for="canudinhocheckbox" id="canudinho" onclick="canudinho()">
+                        <h4>Canudinho</h4>
+                    </label>
+                    <label for="marshmallowcheckbox" id="marshmallow" onclick="marshmallow()">
+                        <h4>Marshmallow</h4>
+                    </label>
+                    <label for="finicheckbox" id="fini" onclick="fini()">
+                        <h4>Fini</h4>
+                    </label>
+                    <label for="morangocheckbox" id="morango" onclick="morango()">
+                        <h4>Morango</h4>
+                    </label>
+
+                    <input type="checkbox" id="acidacheckbox" name="acidacheckbox">
+                    <input type="checkbox" id="gomacheckbox" name="gomacheckbox">
+                    <input type="checkbox" id="canudinhocheckbox" name="canudinhocheckbox">
+                    <input type="checkbox" id="canudinhocheckbox" name="canudinhocheckbox">
+                    <input type="checkbox" id="finicheckbox" name="finicheckbox">
+                    <input type="checkbox" id="morangocheckbox" name="morangocheckbox">
+                </div>
+
+                <button type="submit" id="concluir"></button>
+            </form>
+            <label for="concluir" class="concluir">Fazer Pedido</label>
+        </main>
+ 
+    </div>
+</body>
+
+</html>

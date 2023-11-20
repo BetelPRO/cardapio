@@ -1,0 +1,231 @@
+body {
+    background-image: linear-gradient(to bottom, rgba(219, 4, 247, 0.856), rgb(71, 9, 129), rgb(71, 9, 129), rgba(97, 3, 109, 0.856), rgba(219, 4, 247, 0.856));
+    background-repeat: inherit;
+    background-size: cover;   
+    width: 100%;
+    height: 98vh;
+    margin: 0px;
+}
+
+.romano {
+    position: fixed;
+    opacity: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+header {
+    position: fixed;
+    top: 0rem;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100vw;
+    height: 98vh;
+    z-index: 2;
+}
+
+footer {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.slider {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 20px;
+    width: 640px;
+    height: 400px;
+    box-shadow: 0px 0px 10px;
+    overflow: hidden;
+}
+
+.btn_menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 1rem;
+    z-index: 5;
+    gap: 1rem;
+}
+
+.btn_menu_celular {
+    display: none;
+}
+
+.btn {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.664), rgba(10, 10, 10, 0.664));
+    border: 0.1rem solid white;
+    padding: 0.3rem;
+    border-radius: 5px;
+    width: 3rem;
+    height: 0.5rem;
+    cursor: pointer;
+}
+
+.imagem {
+    background-color: rgba(2, 2, 2, 0.479);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    gap: 1rem;
+}
+
+.imagem img {
+    gap: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px;
+}
+
+.entradas input {
+     display: none;
+}
+
+nav{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2rem;
+    color: white;
+    background-color: black;
+}
+
+.somos {
+    background-color: aliceblue;
+    border: 2px solid rgba(0, 0, 0, 0.705);
+    border-radius: 80px;
+    padding: 1rem;
+    position: absolute;
+    width: 390px;
+    height: 65px;
+    left: 50%;
+    bottom: 13%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.somos img {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.somos p {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.somos h4, .somos h2 {
+    display: none;
+}
+
+
+.navBot p { 
+    margin: 0;
+}
+
+
+@media (max-width:700px) {
+    .slider {
+        width: 480px;
+        height: 300px;
+        overflow: scroll;
+    }
+    
+    .imagem {
+        height: 300px;
+    }
+
+    .imagem img {
+        height: 300px;
+    }
+
+    .btn_menu {
+        display: none;
+    }
+
+    .btn_menu_celular {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        left: 50%;
+        transform: translate(-50%);
+        gap: 0.5rem;
+        z-index: 2;
+    
+    }
+
+    .btn_menu_celular {
+        display: none;
+    }
+
+    .btn {
+        width: 1.5rem;
+        height: 0.25rem;
+    }
+
+    .somos {
+        height: 48px;
+        width: 260px;
+        bottom: 10%;
+    }
+
+    .somos img {
+        width: 3.8rem;
+        margin-right: 1rem;
+    }
+
+    .somos p {
+        font-size: 14px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .somos h4, .somos h2 {
+        display: none;
+    }
+
+    footer {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:500px) {
+    .slider {
+        width: 320px;
+        height: 200px;
+        overflow: scroll;
+    }
+    
+    .imagem, .imagem img {
+        height: 200px;
+    }  
+}
