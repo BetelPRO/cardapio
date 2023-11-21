@@ -46,10 +46,13 @@
         </nav>
 
         <main>
-            <form class="cardapio">
+            <form class="cardapioOff" id="cardapio" onclick="cardapio()">
                 <div class="tamanho">
-                    <div id="4ml"></div>
-                    <div id="3ml"></div>
+                    <label for="sete" id="_4ml" onclick="sete()"></label>
+                    <label for="seis" id="_3ml" onclick="seis()"></label>
+
+                    <input type="checkbox" id="sete" name="sete">
+                    <input type="checkbox" id="seis" name="sei">
                 </div>
 
                 <h3>Acompanhamentos</h3>
@@ -133,7 +136,7 @@
 
                 <button type="submit" id="concluir"></button>
             </form>
-            <label for="concluir" class="concluir">Fazer Pedido</label>
+            <label for="concluir" class="concluir" onclick="pedido()">Fazer Pedido</label>
         </main>
  
     </div>

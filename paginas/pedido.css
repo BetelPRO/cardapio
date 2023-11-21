@@ -19,10 +19,66 @@ main {
     justify-content: center;
 }
 
-label {margin: 0;
+label {
+    margin: 0;
 }
 
-.cardapio {
+.cardapioOff {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4e9b62;
+    border-radius: 15px;
+}
+
+.tamanho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tamanho input {
+    display: none;
+}
+
+.tamanho label {
+    background-color: rgba(243, 234, 234, 0.089);
+    width: 125px;
+    height: 210px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#_3ml{
+    background-image: url("../imagens/acai.png");
+    background-size: 170px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 210px;
+    border-radius: 5px;
+    filter: drop-shadow(6px 7px 8px);
+}
+
+#_4ml{
+    background-image: url("../imagens/sete.png");
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 210px;
+    border-radius: 5px;
+    filter: drop-shadow(6px 7px 8px);
+}
+
+.cardapioOff .acompanhamentos, .cardapioOff .coberturas, .cardapioOff .adicionais, .cardapioOff h3, .cardapioOff~label {
+    display: none;    
+}
+
+.cardapioOn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,17 +89,17 @@ label {margin: 0;
     flex-direction: column;
 }
 
-.cardapio h3 {
+.cardapioOn h3 {
     margin: 10px 0px 0px 20px;
     color: white;
     font-family: sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
 }
 
-.cardapio input {
+.cardapioOn input {
     display: none;
 }
 
-.tamanho {
+.cardapioOn .tamanho {
     display: none;
 }
 
@@ -89,7 +145,7 @@ label {margin: 0;
     font-family: 'sans-serif', 'Franklin Gothic Medium', 'Arial Narrow', Arial;
 }
 
-.cardapio img {
+.cardapioOn img {
     width: 75px;
     height: 100px;
     border-radius: 10px;
@@ -101,7 +157,7 @@ button {
 
 .concluir {   
     padding: 5px;
-    background-color: #509959;
+    background-color: #4e9b62;
     position: absolute;
     left: 50%;
     bottom: 5%;
@@ -124,6 +180,7 @@ button {
     border: 3px solid rgb(0, 0, 0);
     opacity: 65%;
 }
+
 @media (max-width:500px) {
     main {
         display: flex;
@@ -132,7 +189,7 @@ button {
     }
 
     
-    .cardapio {
+    .cardapioOn {
         background-color: rgba(128, 7, 128, 0.377);
         width: 100%;
         border-radius: 20px;

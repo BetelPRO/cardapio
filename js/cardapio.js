@@ -1,3 +1,18 @@
+//ativação do cardapio
+
+function cardapio() {
+    const text = "Press a button!\nEither OK or Cancel.";
+    if (confirm(text) === true) {
+        alert('confirmado')
+    } else {
+        alert("You canceled!")
+    }
+
+    const cardapio = document.getElementById('cardapio');
+    cardapio.classList.remove('cardapioOff');
+    cardapio.classList.add('cardapioOn');
+}
+
 //efeitos dos acompanhamentos
 
 function leite() {
@@ -83,3 +98,14 @@ function morango() {
     const morango = document.getElementById('morango');
     morango.classList.toggle('ativo');
 };
+
+//confirmar pedido
+
+function pedido(){
+    const text = "Press a button!\nEither OK or Cancel.";
+    if (confirm(text) == true) {
+        alert('confirmado')
+    } else {
+        alert("You canceled!")
+    }
+}
