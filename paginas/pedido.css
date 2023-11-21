@@ -23,13 +23,14 @@ label {margin: 0;
 }
 
 .cardapio {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 75%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    position: absolute;
 }
 
 .cardapio h3 {
@@ -133,7 +134,7 @@ button {
     
     .cardapio {
         background-color: rgba(128, 7, 128, 0.377);
-        width: 340px;
+        width: 100%;
         border-radius: 20px;
         overflow: hidden;
     }    
