@@ -13,6 +13,26 @@ function cardapio() {
     cardapio.classList.add('cardapioOn');
 }
 
+function sete() {
+    const sete = document.getElementById('_4ml');
+    const seis = document.getElementById('_3ml');
+
+    seis.classList.remove('tamanhoAtivo');
+    seis.classList.add('tamanhoOff')
+    sete.classList.add('tamanhoAtivo');
+    
+
+}
+
+function seis() {
+    const sete = document.getElementById('_4ml');
+    const seis = document.getElementById('_3ml');
+
+    sete.classList.remove('tamanhoAtivo');
+    sete.classList.add('tamanhoOff')
+    seis.classList.add('tamanhoAtivo');
+}
+
 //efeitos dos acompanhamentos
 
 function leite() {

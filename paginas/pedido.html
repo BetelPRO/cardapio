@@ -46,14 +46,17 @@
         </nav>
 
         <main>
-            <form class="cardapioOff" id="cardapio" onclick="cardapio()">
+            <form class="cardapioOff" id="cardapio">
+                <h2>Selecione o Tamanho</h2>
                 <div class="tamanho">
-                    <label for="sete" id="_4ml" onclick="sete()"></label>
-                    <label for="seis" id="_3ml" onclick="seis()"></label>
+                    <label for="sete" class="tamanhoOff" id="_4ml" onclick="sete()"><h3>400 ml</h3></label>
+                    <label for="seis" class="tamanhoOff" id="_3ml" onclick="seis()"><h3>300 ml</h3></label>
 
                     <input type="checkbox" id="sete" name="sete">
-                    <input type="checkbox" id="seis" name="sei">
+                    <input type="checkbox" id="seis" name="seis">
                 </div>
+
+                <label for="selectTamanho" id="btnAcompanhamentos" onclick="cardapio()">Selecionar Acompanhamentos</label>
 
                 <h3>Acompanhamentos</h3>
                 <div class="acompanhamentos">
