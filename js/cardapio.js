@@ -128,10 +128,100 @@ function morango() {
 //confirmar pedido
 
 function pedido(){
-    const text = "Press a button!\nEither OK or Cancel.";
-    if (confirm(text) == true) {
-        alert('confirmado')
-    } else {
-        alert("You canceled!")
+    let pedido = "com ";
+
+    //tamanho
+    if (document.getElementById("sete").checked) {
+        tamanho = "*400 ml* \n";
+        msg_pedido = "Açaí de 400ml\n";
+    };
+    
+    if (document.getElementById("seis").checked) {
+        tamanho = "*300 ml* \n";
+        msg_pedido = "Açaí de 300ml\n";
+    };
+
+    //acompanhamentos
+    pedido = pedido + '*Acompanhamentos*\n';
+
+    if(document.getElementById("leitecheckbox").checked) {
+        pedido = pedido + "*Leite* \n";
+    };
+    
+    if(document.getElementById("paçocacheckbox").checked) {
+        pedido = pedido + "*Paçoca* \n";
+    };
+    
+    if(document.getElementById("granolacheckbox").checked) {
+        pedido = pedido + "*Granola*  \n";
+    };
+    
+    if(document.getElementById("jujubacheckbox").checked) {
+        pedido = pedido + "*Jujuba*  \n";
+    };
+    
+    if(document.getElementById("confetecheckbox").checked) {
+        pedido = pedido + "*Confete* \n";
+    };
+    
+    if(document.getElementById("chocoballcheckbox").checked) {
+        pedido = pedido + "*Chocobal* \n";
+    };
+
+    if(document.getElementById("bananacheckbox").checked) {
+        pedido = pedido + "*Banana* \n";
+    };
+
+    //coberturas
+    pedido = pedido + '*Coberturas*\n';
+
+    if(document.getElementById("condensadocheckbox").checked) {
+        pedido = pedido + "*Leite Condensado* \n";
+    };
+
+    if(document.getElementById("cmorangocheckbox").checked) {
+        pedido = pedido + "*Cobertura de Morango* \n";
+    };
+
+    if(document.getElementById("chocolatecheckbox").checked) {
+        pedido = pedido + "*Cobertura de Chocolate* \n";
+    };
+
+    //adicionais
+    pedido = pedido + '*Adicionais*\n';
+    
+    if(document.getElementById("acidacheckbox").checked) {
+        pedido = pedido + "*Goma Ácida* \n";
+    };
+
+    if(document.getElementById("gomacheckbox").checked) {
+        pedido = pedido + "*Goma de Amora* \n";
+    };
+
+    if(document.getElementById("canudinhocheckbox").checked) {
+        pedido = pedido + "*Canudinho Recheado* \n";
+    };
+    if(document.getElementById("marshmallowcheckbox").checked) {
+        pedido = pedido + "*Marshmallow* \n";
+    };
+    if(document.getElementById("finicheckbox").checked) {
+        pedido = pedido + "*Fini* \n";
+    };
+    if(document.getElementById("morangocheckbox").checked) {
+        pedido = pedido + "*Morango* \n";
+    };
+
+
+    //mensagem
+    if (document.getElementById("sete").checked || document.getElementById("seis").checked){
+        let mensagem;
+        mensagem = "Olá gostaria de pedir um Açaí de " + tamanho + pedido;
+        msg_pedido = msg_pedido + pedido
+        if(confirm(msg_pedido) == true) {
+            window.open("https://wa.me/+5581986728498?text=" + mensagem);
+        }
     }
-}
+    else {
+        alert("Escolha o Tamanho do Açaí")
+    }
+};
