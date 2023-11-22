@@ -49,11 +49,17 @@
             <form class="cardapioOff" id="cardapio">
                 <h2>Selecione o Tamanho</h2>
                 <div class="tamanho">
-                    <label for="sete" class="tamanhoOff" id="_4ml" onclick="sete()"><h3>400 ml</h3></label>
-                    <label for="seis" class="tamanhoOff" id="_3ml" onclick="seis()"><h3>300 ml</h3></label>
+                    <label for="sete" class="tamanhoOff" id="_4ml" onclick="sete()">
+                        <img src="../imagens/preço7.png" class="preço" alt="preço do açaí">
+                        <h3>400 ml</h3>
+                    </label>
+                    <label for="seis" class="tamanhoOff" id="_3ml" onclick="seis()">
+                        <img src="../imagens/preço6.png" class="preço" alt="preço do açaí">
+                        <h3>300 ml</h3>
+                    </label>
 
-                    <input type="checkbox" id="sete" name="sete">
-                    <input type="checkbox" id="seis" name="seis">
+                    <input type="radio" id="sete" name="tamanho">
+                    <input type="radio" id="seis" name="tamanho">
                 </div>
 
                 <label for="selectTamanho" id="btnAcompanhamentos" onclick="cardapio()">Escolher Acompanhamentos</label>

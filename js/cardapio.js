@@ -1,16 +1,20 @@
 //ativação do cardapio
 
 function cardapio() {
-    const text = "Press a button!\nEither OK or Cancel.";
-    if (confirm(text) === true) {
-        alert('confirmado')
-    } else {
-        alert("You canceled!")
+    if (document.getElementById('sete').checked) {
+        alert('400 ml é pouco pra minha fome de açaí');
+    } else if (document.getElementById('seis').checked) {
+        alert('400 ml é pouco pra minha fome de açaí');
     }
 
+    const text = "Press a button!\nEither OK or Cancel.";
     const cardapio = document.getElementById('cardapio');
-    cardapio.classList.remove('cardapioOff');
-    cardapio.classList.add('cardapioOn');
+    if (confirm(text) === true) {
+        cardapio.classList.remove('cardapioOff');
+        cardapio.classList.add('cardapioOn');
+    } else {
+        alert("You canceled!");
+    }
 }
 
 function sete() {
