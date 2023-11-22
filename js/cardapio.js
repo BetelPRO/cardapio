@@ -142,7 +142,7 @@ function pedido(){
     };
 
     //acompanhamentos
-    pedido = pedido + '*Acompanhamentos*\n';
+    pedido = pedido + '*Acompanhamentos:*\n';
 
     if(document.getElementById("leitecheckbox").checked) {
         pedido = pedido + "*Leite* \n";
@@ -173,7 +173,7 @@ function pedido(){
     };
 
     //coberturas
-    pedido = pedido + '*Coberturas*\n';
+    pedido = pedido + '*Coberturas:*\n';
 
     if(document.getElementById("condensadocheckbox").checked) {
         pedido = pedido + "*Leite Condensado* \n";
@@ -188,7 +188,7 @@ function pedido(){
     };
 
     //adicionais
-    pedido = pedido + '*Adicionais*\n';
+    pedido = pedido + '*Adicionais:*\n';
     
     if(document.getElementById("acidacheckbox").checked) {
         pedido = pedido + "*Goma Ácida* \n";
