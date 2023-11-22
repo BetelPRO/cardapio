@@ -100,7 +100,7 @@ label {
     color: white;
     height: 40px;
     width: 125px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 4px 4px;
     text-align: center;
     display: flex;
     align-items: center;
