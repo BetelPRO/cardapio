@@ -40,6 +40,12 @@ label {
     display: flex;
 }
 
+#preço {
+    margin-left: 35px;
+    width: 40px;
+    height: 40px;
+}
+
 .cardapioOff h2 {
     margin-top: 6%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -47,7 +53,7 @@ label {
 }
 
 .cardapioOff #btnAcompanhamentos {
-    color: white;
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -172,19 +178,33 @@ label {
 
 }
 
-.coberturas {
-    justify-content: center;
-}
-
 .acompanhamentos label, .coberturas label, .adicionais label {
     margin: auto;
     width: 75px;
     height: 90px;
     border-radius: 10px;
-    background-color: yellowgreen;
+    background-color: black;
     background-image: url("../imagens/esc.png");
     background-repeat: no-repeat;
     background-position: center;
+}
+#leite, #acida {
+    margin-left: 4px;
+}
+
+#banana, #morango {
+    margin-right: 4px;
+}
+
+#coberturas {
+    margin-left: 60px;
+}
+
+.coberturas {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
 }
 
 .acompanhamentos h4, .coberturas h4, .adicionais h4 {
@@ -200,6 +220,10 @@ label {
     font-size: 11px;
     margin-top: 65px;
     font-family: 'sans-serif', 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+
+.adicionais h4 {
+    margin-top: 20px;
 }
 
 .cardapioOn img {
