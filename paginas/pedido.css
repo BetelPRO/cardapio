@@ -30,17 +30,18 @@ label {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #4e9b62;
+    background-color: rgba(255, 255, 255, 0.623);
     border-radius: 15px;
 }
 
 .cardapioOff h2 {
     margin-top: 6%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: rgba(202, 58, 221, 0.616) underline;
+    text-decoration: rgba(202, 58, 221, 0.274) underline;
 }
 
 .cardapioOff #btnAcompanhamentos {
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -50,7 +51,7 @@ label {
     text-align: center;
     border: 1px solid white;
     border-radius: 10px;
-    background-image: linear-gradient(#09ad35, rgba(2, 2, 2, 0.582));
+    background-image: linear-gradient(rgba(219, 4, 247, 0.856), rgba(219, 4, 247, 0.856), rgb(152, 23, 212), rgba(2, 2, 2, 0.582));
     box-shadow: 0px 0px 5px;
     
 }
