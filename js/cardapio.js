@@ -1,19 +1,21 @@
 //ativação do cardapio
 
 function cardapio() {
-    if (document.getElementById('sete').checked) {
-        alert('400 ml é pouco pra minha fome de açaí');
-    } else if (document.getElementById('seis').checked) {
-        alert('400 ml é pouco pra minha fome de açaí');
-    }
-
-    const text = "Press a button!\nEither OK or Cancel.";
     const cardapio = document.getElementById('cardapio');
-    if (confirm(text) === true) {
-        cardapio.classList.remove('cardapioOff');
-        cardapio.classList.add('cardapioOn');
-    } else {
-        alert("You canceled!");
+
+    if (document.getElementById('sete').checked) {
+        text = 'Você tem direito a todos os acompanhantes e até 2 sabores de cobertura\n Se você quiser uma explosão ainda maior de sabor\n Experimente os nossos adicionais'
+        if (confirm(text) === true) {
+            cardapio.classList.remove('cardapioOff');
+            cardapio.classList.add('cardapioOn');
+        }
+    } else if (document.getElementById('seis').checked) {
+        alert('Tem certeza que 300ml é suficiente pra você?\n Você ainda pode mudar seu pedido...');
+        text = 'Você tem direito a todos os acompanhantes e até 2 sabores de cobertura\n Se você quiser uma explosão ainda maior de sabor\n Experimente os nossos adicionais'
+        if (confirm(text) === true) {
+            cardapio.classList.remove('cardapioOff');
+            cardapio.classList.add('cardapioOn');
+        }
     }
 }
 
