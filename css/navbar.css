@@ -208,12 +208,23 @@
         background-image: none;
     }
 
+    .lista div { 
+        display: flex;
+        align-items: center;
+        height: 40px;
+        border-radius: 5px;
+        width: 40%;
+    }
+
+    .lista div:hover {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.61), rgb(241, 67, 233), rgb(210, 0, 252));
+    }
+
     .lista a {
         transition:all 1s;
     }
     .lista a:hover {
-        text-decoration: underline;
-        text-decoration-color: #17cf06;
+        background-color: transparent;
     }
     
     .navLeft {
@@ -223,7 +234,7 @@
     .navLeft .lista {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
         position: absolute;
         transition: 1s;
         width: 100%;
