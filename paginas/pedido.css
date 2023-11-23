@@ -238,13 +238,14 @@ button {
 
 .concluir {   
     padding: 5px;
-    background-color: #4e9b62;
+    background-image: linear-gradient(rgba(155, 206, 52, 0.89), yellowgreen, yellowgreen, rgba(119, 156, 44, 0.89));
+    box-shadow: 0px 0px 5px;
     position: absolute;
     left: 50%;
     bottom: 5%;
     transform: translate(-50%);
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.76);
     width: 100px;
     height: 30px;
     display: flex;
@@ -258,7 +259,7 @@ button {
 }
 
 .ativo {
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid yellowgreen;
     opacity: 65%;
 }
 

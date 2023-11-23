@@ -145,70 +145,70 @@ function pedido(){
     pedido = pedido + '*Acompanhamentos:* \n';
 
     if(document.getElementById("leitecheckbox").checked) {
-        pedido = pedido + "*Leite* \n";
+        pedido = pedido + "*Leite,* \n";
     };
     
     if(document.getElementById("paçocacheckbox").checked) {
-        pedido = pedido + "*Paçoca* \n";
+        pedido = pedido + "*Paçoca,* \n";
     };
     
     if(document.getElementById("granolacheckbox").checked) {
-        pedido = pedido + "*Granola*  \n";
+        pedido = pedido + "*Granola,*  \n";
     };
     
     if(document.getElementById("jujubacheckbox").checked) {
-        pedido = pedido + "*Jujuba*  \n";
+        pedido = pedido + "*Jujuba,*  \n";
     };
     
     if(document.getElementById("confetecheckbox").checked) {
-        pedido = pedido + "*Confete* \n";
+        pedido = pedido + "*Confete,* \n";
     };
     
     if(document.getElementById("chocoballcheckbox").checked) {
-        pedido = pedido + "*Chocobal* \n";
+        pedido = pedido + "*Chocoball,* \n";
     };
 
     if(document.getElementById("bananacheckbox").checked) {
-        pedido = pedido + "*Banana* \n";
+        pedido = pedido + "*Banana,* \n";
     };
 
     //coberturas
     pedido = pedido + '*Coberturas:* \n';
 
     if(document.getElementById("condensadocheckbox").checked) {
-        pedido = pedido + "*Leite Condensado* \n";
+        pedido = pedido + "*Leite Condensado,* \n";
     };
 
     if(document.getElementById("cmorangocheckbox").checked) {
-        pedido = pedido + "*Cobertura de Morango* \n";
+        pedido = pedido + "*Cobertura de Morango,* \n";
     };
 
     if(document.getElementById("chocolatecheckbox").checked) {
-        pedido = pedido + "*Cobertura de Chocolate* \n";
+        pedido = pedido + "*Cobertura de Chocolate,* \n";
     };
 
     //adicionais
     pedido = pedido + '*Adicionais:* \n';
     
     if(document.getElementById("acidacheckbox").checked) {
-        pedido = pedido + "*Goma Ácida* \n";
+        pedido = pedido + "*Goma Ácida,* \n";
     };
 
     if(document.getElementById("gomacheckbox").checked) {
-        pedido = pedido + "*Goma de Amora* \n";
+        pedido = pedido + "*Goma de Amora,* \n";
     };
 
     if(document.getElementById("canudinhocheckbox").checked) {
-        pedido = pedido + "*Canudinho Recheado* \n";
+        pedido = pedido + "*Canudinho Recheado,* \n";
     };
     if(document.getElementById("marshmallowcheckbox").checked) {
-        pedido = pedido + "*Marshmallow* \n";
+        pedido = pedido + "*Marshmallow,* \n";
     };
     if(document.getElementById("finicheckbox").checked) {
         pedido = pedido + "*Fini* \n";
     };
     if(document.getElementById("morangocheckbox").checked) {
-        pedido = pedido + "*Morango* \n";
+        pedido = pedido + "*Morango,* \n";
     };
 
 
