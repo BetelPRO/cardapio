@@ -263,6 +263,10 @@ button {
     opacity: 65%;
 }
 
+.off {
+    display: none;
+}
+
 @media (max-width:500px) {
     main {
         display: flex;
