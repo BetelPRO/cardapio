@@ -205,12 +205,51 @@ function morango() {
     morango.classList.toggle('ativo');
 };
 
-//confirmar pedido
+// confirmar pedido
 
 function pedido(){
+
+    // cálculo de preço
+    let total = 0;
+
+    if(document.getElementById('sete').checked) {
+        total = 7;
+    } else {
+        total = 6;
+    };
+
+    if(document.getElementById('condensadocheckbox').checked && document.getElementById('cmorangocheckbox').checked && document.getElementById('chocolatecheckbox').checked) {
+        total = total + 0.50;
+    };
+
+    if(document.getElementById('acidacheckbox').checked) {
+        total = total + 0.50;
+    };
+    
+    if(document.getElementById('gomacheckbox').checked) {
+        total = total + 0.50;
+    };
+
+    if(document.getElementById('canudinhocheckbox').checked) {
+        total = total + 1;
+    };
+
+    if(document.getElementById('marshmallowcheckbox').checked) {
+        total = total + 1;
+    };
+
+    if(document.getElementById('finicheckbox').checked) {
+        total = total + 1.50;
+    };
+
+    if(document.getElementById('morangocheckbox').checked) {
+        total = total + 1.50;
+    };
+
+    // mensagem do pedido
     let pedido = "com ";
 
-    //tamanho
+    // tamanho
     if (document.getElementById("sete").checked) {
         tamanho = "*400 ml* \n";
         msg_pedido = "Açaí de 400ml\n";
@@ -221,7 +260,7 @@ function pedido(){
         msg_pedido = "Açaí de 300ml\n";
     };
 
-    //acompanhamentos
+    // acompanhamentos
     pedido = pedido + '*Acompanhamentos:* \n';
     
     if (document.getElementById("completocheckbox").checked) {
@@ -256,23 +295,24 @@ function pedido(){
         };
     };
 
-    //coberturas
+    // coberturas
     pedido = pedido + '*Coberturas:* \n';
 
-    if(document.getElementById("condensadocheckbox").checked && document.getElementById("cmorangocheckbox").checked) {
-        pedido = pedido + "Leite Condensado, \nCobertura de Morango, \n";
+    if(document.getElementById("condensadocheckbox").checked) {
+        pedido = pedido + "Leite Condensado, \n";
     };
 
-    if(document.getElementById("cmorangocheckbox").checked && document.getElementById("chocolatecheckbox").checked) {
-        pedido = pedido + "Cobertura de Morango, \nCobertura de Chocolate, \n";
+    if(document.getElementById("cmorangocheckbox").checked) {
+        pedido = pedido + "Calda de Morango, \n";
     };
 
-    if(document.getElementById("chocolatecheckbox").checked && document.getElementById("condensadocheckbox").checked) {
-        pedido = pedido + "Cobertura de Chocolate, \nLeite Condensado, \n";
+    if(document.getElementById("chocolatecheckbox").checked) {
+        pedido = pedido + "Calda de Chocolate, \n";
     };
 
-    //adicionais
+    // adicionais
     pedido = pedido + '*Adicionais:* \n';
+    let st = '0'
     
     if(document.getElementById("acidacheckbox").checked) {
         pedido = pedido + "Goma Ácida, \n";
@@ -295,16 +335,21 @@ function pedido(){
         pedido = pedido + "Morango, \n";
     };
 
+    if (document.getElementById("acidacheckbox").checked || document.getElementById("gomacheckbox").checked || document.getElementById("canudinhocheckbox").checked || document.getElementById("marshmallowcheckbox").checked || document.getElementById("finicheckbox").checked || document.getElementById("morangocheckbox").checked) {
+        total = (total).toFixed(2)
+    }
 
-    //mensagem
+    // mensagem
     if (document.getElementById("sete").checked || document.getElementById("seis").checked){
         let mensagem;
         mensagem = "Olá gostaria de pedir um Açaí de " + tamanho + pedido;
-        msg_pedido = msg_pedido + pedido
+        msg_pedido = msg_pedido + pedido + '\n*Total*: ' + total;
         if(confirm(msg_pedido) == true) {
-            window.open("https://wa.me/+5581997236596?text=" + mensagem);
+            window.open("https://wa.me/+5581997236596?text=" + mensagem +'\n*Total*: ' + total);
         }
     } else {
         alert("Escolha o Tamanho do Açaí")
     };
+
+    
 };
