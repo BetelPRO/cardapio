@@ -334,10 +334,10 @@ function pedido(){
     if(document.getElementById("morangocheckbox").checked) {
         pedido = pedido + "Morango, \n";
     };
+ 
 
-    if (document.getElementById("acidacheckbox").checked || document.getElementById("gomacheckbox").checked || document.getElementById("canudinhocheckbox").checked || document.getElementById("marshmallowcheckbox").checked || document.getElementById("finicheckbox").checked || document.getElementById("morangocheckbox").checked) {
-        total = (total).toFixed(2)
-    }
+    total = (total).toFixed(2);
+    total = total.toString().replace(".", ",");
 
     // mensagem
     if (document.getElementById("sete").checked || document.getElementById("seis").checked){
