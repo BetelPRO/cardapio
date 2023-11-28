@@ -4,14 +4,14 @@ function cardapio() {
     const cardapio = document.getElementById('cardapio');
 
     if (document.getElementById('sete').checked) {
-        text = 'Você tem direito a todos os acompanhamentos e até 2 sabores de cobertura\n Se você quiser uma explosão ainda maior de sabor\n Experimente os nossos adicionais'
+        text = 'Você tem direito a todos os acompanhamentos e até 2 sabores de cobertura\n\n Se você quiser uma explosão ainda maior de sabor\n Experimente os nossos adicionais'
         if (confirm(text) === true) {
             cardapio.classList.remove('cardapioOff');
             cardapio.classList.add('cardapioOn');
         }
     } else if (document.getElementById('seis').checked) {
         alert('Tem certeza que 300ml é suficiente pra você?\n Você ainda pode mudar seu pedido...');
-        text = 'Você tem direito a todos os acompanhamentos e até 2 sabores de cobertura\n Se você quiser uma explosão ainda maior de sabor\n Experimente os nossos adicionais'
+        text = 'Você tem direito a todos os acompanhamentos e até 2 sabores de cobertura\n\n Se você quiser uma explosão ainda maior de sabor\n Experimente os nossos adicionais'
         if (confirm(text) === true) {
             cardapio.classList.remove('cardapioOff');
             cardapio.classList.add('cardapioOn');
