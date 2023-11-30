@@ -66,7 +66,7 @@ footer {
     gap: 1rem;
 }
 
-.btn_menu_celular {
+.btn_celular {
     display: none;
 }
 
@@ -213,25 +213,52 @@ nav{
         display: none;
     }
 
-    .btn_menu_celular {
-        position: fixed;
+    .btn_celular {
+        width: 65%;
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%);
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        left: 50%;
-        transform: translate(-50%);
+        justify-content: center;
         gap: 0.5rem;
         z-index: 2;
-    
     }
 
-    .btn_menu_celular {
-        display: none;
+    .btn_celular label {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.664), rgba(10, 10, 10, 0.664));
+        border: 0.1rem solid white;
+        padding: 0.2rem;
+        border-radius: 5px;
+        width: 3rem;
+        height: 0.5rem;
+        cursor: pointer;
     }
 
     .btn {
-        width: 1.5rem;
-        height: 0.25rem;
+        width: 1.0rem;
+        height: 0.10rem;
+    }
+
+    .ativo1~.imagem {
+        margin-left: 0;
+        transition: 1s;
+    }
+    
+    .ativo2~.imagem {
+        margin-left: -320px;
+        transition: 1s;
+    }
+    
+    .ativo3~.imagem {
+        margin-left: -640px;
+        transition: 1s;
+    }
+    
+    .ativo4~.imagem {
+        margin-left: -960px;
+        transition: 1s;
     }
 
     .somos {

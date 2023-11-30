@@ -22,7 +22,10 @@ function cardapio() {
 function sete() {
     const sete = document.getElementById('_4ml');
     const seis = document.getElementById('_3ml');
+    const btn = document.getElementById('btnAcompanhamentos');
 
+    btn.classList.remove('btn');
+    btn.classList.add('btnAcompanhamentosOn');
     seis.classList.remove('tamanhoAtivo');
     seis.classList.add('tamanhoOff')
     sete.classList.add('tamanhoAtivo');
@@ -33,7 +36,10 @@ function sete() {
 function seis() {
     const sete = document.getElementById('_4ml');
     const seis = document.getElementById('_3ml');
+    const btn = document.getElementById('btnAcompanhamentos');
 
+    btn.classList.remove('btn');
+    btn.classList.add('btnAcompanhamentosOn');
     sete.classList.remove('tamanhoAtivo');
     sete.classList.add('tamanhoOff')
     seis.classList.add('tamanhoAtivo');
@@ -344,9 +350,9 @@ function pedido(){
         let mensagem;
         mensagem = "Olá gostaria de pedir um Açaí de " + tamanho + pedido;
         msg_pedido = msg_pedido + pedido + '\n*Total*: ' + total;
-        if(confirm(msg_pedido) == true) {
+        if(confirm(msg_pedido) === true) {
             window.open("https://wa.me/+5581997236596?text=" + mensagem +'\n*Total*: ' + total);
-        }
+        };
     } else {
         alert("Escolha o Tamanho do Açaí")
     };

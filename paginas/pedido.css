@@ -57,20 +57,36 @@ label {
     text-decoration: rgba(159, 223, 31, 0.384) underline;
 }
 
-.cardapioOff #btnAcompanhamentos {
+.cardapioOff .btn {
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 15px;
     margin: auto;
+    padding: 1px;
+    width: 165px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(155, 206, 52, 0.507),rgba(153, 205, 50, 0.548), rgba(153, 205, 50, 0.555), rgba(119, 156, 44, 0.89));
+    box-shadow: 0px 0px 5px;
+    
+}
+
+.btnAcompanhamentosOn {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin: auto;
+    padding: 1px;
     width: 165px;
     height: 40px;
     text-align: center;
     border: 1px solid white;
     border-radius: 10px;
     background-image: linear-gradient(rgba(155, 206, 52, 0.89), yellowgreen, yellowgreen, rgba(119, 156, 44, 0.89));
-    box-shadow: 0px 0px 5px;
-    
 }
 
 .cardapioOn h2, .cardapioOn #btnAcompanhamentos {
