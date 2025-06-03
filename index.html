@@ -91,6 +91,41 @@
         document.getElementById("btnResumo").style.display = "block";
       }
     }
+  function enviarPedido() {
+    const totalCopos = document.querySelectorAll(".copo").length;
+    const pedido = [];
+
+    for (let i = 1; i <= totalCopos; i++) {
+      const copo = {
+        produto: document.querySelector(`input[name="copo${i}-produto"]`).value,
+        farinhas: Array.from(document.querySelectorAll(`input[name="copo${i}-farinhas"]:checked`)).map(el => el.value),
+        guloseimas: Array.from(document.querySelectorAll(`input[name="copo${i}-guloseimas"]:checked`)).map(el => el.value),
+        frutas: Array.from(document.querySelectorAll(`input[name="copo${i}-frutas"]:checked`)).map(el => el.value),
+        coberturas: Array.from(document.querySelectorAll(`input[name="copo${i}-coberturas"]:checked`)).map(el => el.value)
+      };
+      pedido.push(copo);
+    }
+
+    fetch("https://cardapio-api.up.railway.app/pedido", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ pedido })
+    })
+    .then(res => {
+      if (res.ok) {
+        alert("Pedido enviado com sucesso!");
+      } else {
+        alert("Erro ao enviar o pedido.");
+      }
+    })
+    .catch(() => alert("Erro de conexão com o servidor."));
+  }
+
+  // Substitui a função de confirmar por essa:
+  document.getElementById("btnResumo").onclick = () => {
+    mostrarResumo();
+    enviarPedido();
+  };
 
     function mostrarResumo() {
       const resumo = document.getElementById("resumo");
